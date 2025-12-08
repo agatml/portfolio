@@ -1,0 +1,393 @@
+/* reset var */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0d1117;
+  --text: #e6e6e6;
+  --primary: #007aff;
+  --secondary: #00d1ff;
+  --gray: #7b61ff;
+}
+
+/* padrao */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#sobre p {
+  font-size: 1.2rem;
+  margin-bottom: 10rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* header */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  padding: 20px 24px 24px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#whats-top {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(0deg, #0d1117 0%, #121721 100%);
+}
+
+.hero {
+  text-align: center;
+  padding: 10rem 0 10rem;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.hero a:hover {
+  background-color: #005fcc;
+}
+
+/* cards */
+
+.container-card {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+#projetos h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s ease;
+  width: 22.5rem;
+  height: 33rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.7rem;
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #e6e6e6;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #c4c4c4;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.tech span {
+  display: inline-block;
+  background: #007aff11;
+  border: 1px solid #007aff33;
+  color: #00d1ff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #007aff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #00d1ff55;
+}
+
+#habilidades h3 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+
+#habilidades .icons-princ {
+  margin-top: 1rem;
+  margin-bottom: 7rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icons-princ i {
+  font-size: 50px;
+  color: var(--text);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons-princ i:hover {
+  transform: scale(1.2);
+  color: var(--primary);
+}
+
+.icons-cont {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.icons-cont i {
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons-cont a:hover i {
+  color: (--var var(--primary));
+}
+
+#contato {
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+
+#contato .icons-cont a:hover {
+  transform: translateY(-3px);
+}
+
+#contato .icons-cont a {
+  transition: 0.3s ease;
+}
+
+#habilidades .habil-item {
+  position: relative;
+  font-size: 60px; /* tamanho do ícone */
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.habil-item:hover {
+  transform: scale(1.15);
+}
+
+.habil-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.3;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.habil-item:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+footer {
+  background: var(--background);
+  color: var(--text);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background: linear-gradient(0deg, #0d1117 0%, #121721 100%);
+}
+
+footer p,
+footer small {
+  margin: 0.3rem 0;
+}
+
+footer .socials {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+footer .socials a {
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .menu a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  #whats-top {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+
+  /* cards */
+
+  .container-card {
+    display: inline-block;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .project-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s ease;
+    width: 30rem;
+    height: 34.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.7rem;
+  }
+}
