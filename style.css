@@ -419,7 +419,63 @@ footer .socials a:hover {
 
 
 @media (max-width: 425px) {
+html {
+  font-size: 16px;
+  max-width: 100%;
+}
 
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: #fff;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#sobre p {
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: auto;
+  
+}
 
 /* header */
 .container-header {
@@ -427,8 +483,6 @@ footer .socials a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: auto;
-  padding: 20px 24px 24px 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -440,9 +494,6 @@ footer .socials a:hover {
   display: flex;
   list-style: none;
   gap: 24px;
-  margin: auto;
-  margin-left: 25px;
-  padding: 0;
 }
 
 .menu a {
@@ -451,7 +502,10 @@ footer .socials a:hover {
   font-size: 1.2rem;
 }
 
-
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
 .hero {
   background: linear-gradient(0deg, #0d1117 0%, #121721 100%);
@@ -497,22 +551,17 @@ footer .socials a:hover {
   margin-bottom: 10rem;
 }
 
-#projetos h2 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
+
 
 .project-card {
   background: #111827;
   border: 1px solid #1f2937;
   border-radius: 12px;
-  padding: 20px;
+ 
   transition: 0.3s ease;
-  width: 22.5rem;
+  width: 100%;
   height: auto;
-  min-height: 33rem;
-}
+  }
 
 .project-card img {
   width: 100%;
@@ -524,7 +573,6 @@ footer .socials a:hover {
 
 .project-card h3 {
   margin: 0 0 8px;
-  font-size: 1.2rem;
   color: #e6e6e6;
 }
 
@@ -535,38 +583,9 @@ footer .socials a:hover {
   line-height: 1.6;
 }
 
-.tech span {
-  display: inline-block;
-  background: #007aff11;
-  border: 1px solid #007aff33;
-  color: #00d1ff;
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 6px;
-  margin-right: 6px;
-  margin-bottom: 1.5rem;
-}
 
-.btn {
-  display: inline-block;
-  padding: 8px 14px;
-  background: #007aff;
-  color: #fff;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-align: center;
-  border-radius: 6px;
-  transition: 0.2s ease;
-}
 
-.btn:hover {
-  background: #005fcc;
-}
 
-.project-card:hover {
-  transform: translateY(-4px);
-  border-color: #00d1ff55;
-}
 
 #habilidades h3 {
   align-items: center;
@@ -583,7 +602,7 @@ footer .socials a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: auto;
 }
 
 .icons-princ i {
@@ -599,7 +618,7 @@ footer .socials a:hover {
 
 .icons-cont {
   display: flex;
-  gap: 1.5rem;
+  gap: auto;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
@@ -620,13 +639,8 @@ footer .socials a:hover {
   margin-top: 10rem;
 }
 
-#contato .icons-cont a:hover {
-  transform: translateY(-3px);
-}
 
-#contato .icons-cont a {
-  transition: 0.3s ease;
-}
+
 
 #habilidades .habil-item {
   position: relative;
@@ -636,8 +650,8 @@ footer .socials a:hover {
   transition: transform 0.2s ease;
 }
 
-.habil-item:hover {
-  transform: scale(1.15);
+.habil-item {
+  position: relative;
 }
 
 .habil-item::after {
@@ -652,18 +666,22 @@ footer .socials a:hover {
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 13px;
-  line-height: 1.3;
-  white-space: nowrap;
+  line-height: 1.4;
 
+  
+  max-width: min(260px, calc(100vw - 32px));
+  white-space: normal;
+  
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity .2s ease, transform .2s ease;
 }
 
 .habil-item:hover::after {
   opacity: 1;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%) translateY(-5px);
 }
+
 
 footer {
   background: var(--background);
@@ -672,7 +690,6 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   background: linear-gradient(0deg, #0d1117 0%, #121721 100%);
-
 }
 
 footer p,
@@ -685,6 +702,17 @@ footer .socials {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
+}
+
+footer .socials a {
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
 }
 
     
